@@ -10,6 +10,38 @@
 .kore-chat-window .chat-box-header {
 	padding-right: 10px !important;
 }
+
+/*header*/
+.kore-chat-header {
+	background: #0d6efd !important;
+	padding: 8px 16px !important;
+	width: 100% !important;
+	height: 48px !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.header-content {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	white-space: nowrap !important;
+}
+
+.header-icon {
+	width: 32px !important; /* Increased from 24px */
+	height: 32px !important; /* Increased from 24px */
+	margin-right: 12px !important; /* Slightly increased margin */
+}
+
+.header-title {
+	color: white !important;
+	font-size: 18px !important; /* Increased from 14px */
+	font-weight: 500 !important; /* Added medium weight for better visibility */
+	overflow: visible !important;
+}
+
 .liteTheme-one,
 .darkTheme-one,
 .liteTheme-two,
