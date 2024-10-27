@@ -1,3 +1,15 @@
+/* Hide minimize, maximize and close buttons */
+.kore-chat-window .button-group,
+.kore-chat-window .minimize-btn,
+.kore-chat-window .expand-btn,
+.kore-chat-window .close-btn {
+	display: none !important;
+}
+
+/* Remove the space where the buttons were */
+.kore-chat-window .chat-box-header {
+	padding-right: 10px !important;
+}
 .liteTheme-one,
 .darkTheme-one,
 .liteTheme-two,

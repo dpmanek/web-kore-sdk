@@ -65,7 +65,10 @@
 
 		var koreBot = koreBotChat();
 
+		//Logging Chat configuration
+		console.log(':::::chatConfig::::');
 		console.log(chatConfig);
+
 		// Add fullscreen configuration
 		chatConfig.minimizeMode = false;
 		$('#kr_chatContainer').hide();
