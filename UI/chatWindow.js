@@ -1673,7 +1673,9 @@
 				me.config.chatContainer = chatWindowHtml;
 				me.updatei18nDirection();
 
-				me.config.chatTitle = tempTitle;
+				// me.config.chatTitle = tempTitle;
+				/* Change: Chat Title Done here */
+				me.config.chatTitle = 'Hey! I’m Maya. How may I help you?';
 				if (!me.config.minimizeMode) {
 					me.bot.init(me.config.botOptions, me.config.messageHistoryLimit);
 					if (me.config.multiPageApp && me.config.multiPageApp.enable) {
@@ -4450,7 +4452,9 @@
 <div class="kore-chat-header"> \
     <div class="header-icon-title">\
         <div class="header-content">\
-            <img class="header-icon" src="https://dlnwzkim0wron.cloudfront.net/f-75256484-db84-52f1-9951-1b4a02e9298a.png" alt="chat icon" />\
+		<!-- Change: Header change -->\
+            <img class="header-icon" src="https://s3.amazonaws.com/lmnd-images/maya_avatar.png" alt="Maya chat icon" />\
+           <!-- Blue Icon : <img class="header-icon" src="https://dlnwzkim0wron.cloudfront.net/f-75256484-db84-52f1-9951-1b4a02e9298a.png" alt="Blue chat icon" /> -->\
             <div id="botHeaderTitle" aria-labelledby="botHeaderTitle" class="header-title" title="${chatTitle}">${chatTitle}</div> \
         </div>\
     </div>\
