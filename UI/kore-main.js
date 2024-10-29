@@ -71,6 +71,7 @@
 
 		// Add fullscreen configuration
 		chatConfig.minimizeMode = false;
+
 		$('#kr_chatContainer').hide();
 
 		koreBot.show(chatConfig);

@@ -1,3 +1,63 @@
+/* Main chat container */
+.kore-chat-window {
+	max-width: 100% !important;
+	width: 100% !important;
+	margin: 0 !important;
+	height: 100vh !important;
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	background: #fff;
+}
+/* Chat header - UPDATED */
+.kore-chat-header {
+	z-index: 1000 !important;
+}
+
+/* Chat container */
+.chat-container {
+	height: 100% !important;
+	padding: 32px !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+
+/* Hide all messages */
+.chat-container > div,
+.chat-container > li {
+	display: none !important;
+}
+
+/* unhides the last two */
+.chat-container > div:nth-last-child(-n + 2),
+.chat-container > li:nth-last-child(-n + 2) {
+	display: block !important;
+}
+
+/* Message text */
+.message {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #2d2d2d;
+	margin: 0;
+}
+
+/* Quick replies/buttons container - to keep it on right and below previous response*/
+.quick_replies_btn_parent,
+.buttonTmplContent {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+/* Remove default elements */
+
+.kore-chat-footer,
+.time {
+	display: none !important;
+}
+
 /* Hide minimize, maximize and close buttons */
 .kore-chat-window .button-group,
 .kore-chat-window .minimize-btn,

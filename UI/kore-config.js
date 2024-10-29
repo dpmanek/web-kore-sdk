@@ -24,10 +24,10 @@
 	// botOptions.userIdentity = 'PLEASE_ENTER_USER_EMAIL_ID';// Provide users email id here
 	// botOptions.botInfo = { name: "PLEASE_ENTER_BOT_NAME", "_id": "PLEASE_ENTER_BOT_ID" }; // bot name is case sensitive
 	botOptions.JWTUrl = 'http://localhost:3000/api/users/sts'; // JWT token generation endpoint
-	botOptions.userIdentity = 'dpmanek@gmail.com'; // Provide users email id here //email id changed form mphasis to private
+	botOptions.userIdentity = 'dpmanek123@gmail.com'; // Provide users email id here //email id changed form mphasis to private
 	botOptions.botInfo = {
-		name: 'RetirementPlan',
-		_id: 'st-ba3d94bd-f420-5e94-b9ad-15d3641beae7',
+		name: 'Vaxie_aswani.gampala+mphasispoc@kore.com_1',
+		_id: 'st-f512f757-49b6-51cf-b3ce-a8bc52403f29',
 	}; // bot name is case sensitive
 
 	/* 
@@ -35,8 +35,8 @@
     Refer below document for JWT token generation at server side. Client Id and Client secret should maintained at server end.
     https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/
     **/
-	botOptions.clientId = 'cs-b6b2e31d-23e1-5d60-8003-2c6a05ead463';
-	botOptions.clientSecret = 'tIWZlN1msE6oVwKUao6VEm4TC6X7upW5czLyEpdaXUQ=';
+	botOptions.clientId = 'cs-812b02ca-d9c7-5174-aae5-ddbdbe6d8edc';
+	botOptions.clientSecret = 'm9+rvNiXT5BxsdgFTZrMbbAEk8OPIGGCOE+CrqvGg1E=';
 	// botOptions.clientId = "PLEASE_ENTER_CLIENT_ID";
 	// botOptions.clientSecret = "PLEASE_ENTER_CLIENT_SECRET";
 	botOptions.brandingAPIUrl =
@@ -83,7 +83,7 @@
 			},
 		},
 		allowLocation: true, // set false, to deny sending location to server
-		loadHistory: true, // set true to load recent chat history
+		loadHistory: false, // set true to load recent chat history
 		messageHistoryLimit: 10, // set limit to load recent chat history
 		autoEnableSpeechAndTTS: false, // set true, to use talkType voice keyboard.
 		graphLib: 'd3', // set google, to render google charts.This feature requires loader.js file which is available in google charts documentation.
