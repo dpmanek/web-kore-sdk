@@ -2669,7 +2669,6 @@
 				});
 
 				me.bot.on('message', function (message) {
-					//actual implementation starts here
 					if (me.popupOpened === true) {
 						$('.kore-auth-popup .close-popup').trigger('click');
 					}
@@ -2678,6 +2677,25 @@
 					if (tempData.from === 'bot' && tempData.type === 'bot_response') {
 						if (tempData && tempData.message && tempData.message.length) {
 							if (tempData.message[0]) {
+								/* Change: Dynamic Chat Title Done here */
+								// writing logic to update title
+
+								//if the new payload exists
+								if (
+									tempData.message[0].component &&
+									tempData.message[0].component.payload &&
+									tempData.message[0].component.payload.text
+								) {
+									me.config.chatTitle =
+										tempData.message[0].component.payload.text;
+									// Also update the DOM element directly
+									var headerTitle = document.getElementById('botHeaderTitle'); // taking handle of the header title
+									if (headerTitle) {
+										headerTitle.textContent = me.config.chatTitle; // logic to update the title
+										headerTitle.title = me.config.chatTitle; // logic to update the toottip
+									}
+								}
+
 								if (!tempData.message[0].cInfo) {
 									tempData.message[0].cInfo = {};
 								}
