@@ -24,7 +24,7 @@
 	// botOptions.userIdentity = 'PLEASE_ENTER_USER_EMAIL_ID';// Provide users email id here
 	// botOptions.botInfo = { name: "PLEASE_ENTER_BOT_NAME", "_id": "PLEASE_ENTER_BOT_ID" }; // bot name is case sensitive
 	botOptions.JWTUrl = 'http://localhost:3000/api/users/sts'; // JWT token generation endpoint
-	botOptions.userIdentity = 'deepdeven.manek@mphasis.com'; // Provide users email id here
+	botOptions.userIdentity = 'dpmanek@gmail.com'; // Provide users email id here //email id changed form mphasis to private
 	botOptions.botInfo = {
 		name: 'RetirementPlan',
 		_id: 'st-ba3d94bd-f420-5e94-b9ad-15d3641beae7',
