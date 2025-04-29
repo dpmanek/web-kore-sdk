@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GlobalBank - Your Trusted Financial Partner</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			body {
+				background-color: #f5f5f5;
+				color: #333;
+			}
+
+			header {
+				background-color: #003366;
+				color: white;
+				padding: 1rem 2rem;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			.header-container {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				font-size: 1.8rem;
+				font-weight: bold;
+			}
+
+			.logo span {
+				color: #ffcc00;
+			}
+
+			nav ul {
+				display: flex;
+				list-style: none;
+			}
+
+			nav ul li {
+				margin-left: 1.5rem;
+			}
+
+			nav ul li a {
+				color: white;
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s;
+			}
+
+			nav ul li a:hover {
+				color: #ffcc00;
+			}
+
+			.hero {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.5),
+						rgba(0, 0, 0, 0.5)
+					),
+					url('https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+				background-size: cover;
+				background-position: center;
+				height: 400px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				color: white;
+			}
+
+			.hero-content {
+				max-width: 800px;
+				padding: 2rem;
+			}
+
+			.hero h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.hero p {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+			}
+
+			.btn {
+				display: inline-block;
+				background-color: #ffcc00;
+				color: #003366;
+				padding: 0.8rem 1.5rem;
+				border-radius: 5px;
+				text-decoration: none;
+				font-weight: bold;
+				transition: background-color 0.3s;
+			}
+
+			.btn:hover {
+				background-color: #e6b800;
+			}
+
+			.features {
+				max-width: 1200px;
+				margin: 3rem auto;
+				padding: 0 2rem;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+			}
+
+			.feature-card {
+				background-color: white;
+				border-radius: 8px;
+				padding: 2rem;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+
+			.feature-card h3 {
+				color: #003366;
+				margin-bottom: 1rem;
+			}
+
+			.feature-card p {
+				color: #666;
+				margin-bottom: 1.5rem;
+			}
+
+			.feature-icon {
+				font-size: 2.5rem;
+				color: #ffcc00;
+				margin-bottom: 1rem;
+			}
+
+			footer {
+				background-color: #002244;
+				color: white;
+				padding: 3rem 2rem;
+			}
+
+			.footer-container {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 2rem;
+			}
+
+			.footer-section h4 {
+				color: #ffcc00;
+				margin-bottom: 1rem;
+				font-size: 1.2rem;
+			}
+
+			.footer-section ul {
+				list-style: none;
+			}
+
+			.footer-section ul li {
+				margin-bottom: 0.5rem;
+			}
+
+			.footer-section ul li a {
+				color: #ccc;
+				text-decoration: none;
+				transition: color 0.3s;
+			}
+
+			.footer-section ul li a:hover {
+				color: white;
+			}
+
+			.copyright {
+				text-align: center;
+				padding-top: 2rem;
+				margin-top: 2rem;
+				border-top: 1px solid #334455;
+				color: #ccc;
+			}
+		</style>
+		<!-- Include the Kore SDK scripts -->
+		<script src="../libs/jquery.js"></script>
+		<script src="../libs/jquery.tmpl.min.js"></script>
+		<script src="../libs/moment.js"></script>
+		<script src="../kore-bot-sdk-client.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<div class="logo">Global<span>Bank</span></div>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Personal Banking</a></li>
+						<li><a href="#">Business Banking</a></li>
+						<li><a href="#">Investments</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="hero-content">
+				<h1>Banking Made Simple</h1>
+				<p>
+					Experience the future of banking with GlobalBank. Secure, reliable,
+					and always at your service.
+				</p>
+				<a href="#" class="btn">Open an Account</a>
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="feature-card">
+				<div class="feature-icon">💰</div>
+				<h3>Savings Accounts</h3>
+				<p>
+					Grow your money with our high-interest savings accounts. Start saving
+					for your future today.
+				</p>
+				<a href="#" class="btn">Learn More</a>
+			</div>
+
+			<div class="feature-card">
+				<div class="feature-icon">🏠</div>
+				<h3>Home Loans</h3>
+				<p>
+					Make your dream home a reality with our competitive mortgage rates and
+					flexible payment options.
+				</p>
+				<a href="#" class="btn">Apply Now</a>
+			</div>
+
+			<div class="feature-card">
+				<div class="feature-icon">📱</div>
+				<h3>Mobile Banking</h3>
+				<p>
+					Bank on the go with our award-winning mobile app. Check balances,
+					transfer funds, and pay bills.
+				</p>
+				<a href="#" class="btn">Download App</a>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-section">
+					<h4>About GlobalBank</h4>
+					<ul>
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Leadership Team</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">News & Updates</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section">
+					<h4>Products & Services</h4>
+					<ul>
+						<li><a href="#">Checking Accounts</a></li>
+						<li><a href="#">Savings Accounts</a></li>
+						<li><a href="#">Credit Cards</a></li>
+						<li><a href="#">Loans & Mortgages</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section">
+					<h4>Help & Support</h4>
+					<ul>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Security Center</a></li>
+						<li><a href="#">Report Fraud</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-section">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Service</a></li>
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Disclosures</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<p>
+					&copy; 2025 GlobalBank. All rights reserved. This is a demo website
+					for testing purposes only.
+				</p>
+			</div>
+		</footer>
+
+		<!-- Include the chat widget initialization -->
+		<script src="kore-config.js"></script>
+		<script src="kore-main.js"></script>
+	</body>
+</html>

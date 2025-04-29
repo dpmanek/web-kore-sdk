@@ -83,7 +83,7 @@
 			},
 		},
 		allowLocation: true, // set false, to deny sending location to server
-		loadHistory: false, // set true to load recent chat history
+		loadHistory: true, // set true to load recent chat history
 		messageHistoryLimit: 10, // set limit to load recent chat history
 		autoEnableSpeechAndTTS: false, // set true, to use talkType voice keyboard.
 		graphLib: 'd3', // set google, to render google charts.This feature requires loader.js file which is available in google charts documentation.

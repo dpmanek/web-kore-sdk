@@ -41,18 +41,12 @@
 	height: 100% !important;
 	padding: 32px !important;
 	margin: 0 !important;
-	overflow: hidden !important;
+	overflow-y: auto !important;
 }
 
-/* Hide all messages */
+/* Show all messages */
 .chat-container > div,
 .chat-container > li {
-	display: none !important;
-}
-
-/* unhides the last two */
-.chat-container > div:nth-last-child(-n + 2),
-.chat-container > li:nth-last-child(-n + 2) {
 	display: block !important;
 }
 
