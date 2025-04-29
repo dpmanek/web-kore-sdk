@@ -1,5 +1,6 @@
+/* Full screen chat window - comment/uncomment to toggle */
 /* Main chat container */
-.kore-chat-window {
+/* .kore-chat-window {
 	max-width: 100% !important;
 	width: 100% !important;
 	margin: 0 !important;
@@ -8,6 +9,27 @@
 	top: 0 !important;
 	left: 0 !important;
 	background: #fff;
+} */
+
+/* Original smaller chat window */
+/* Main chat container */
+.kore-chat-window {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 480px;
+	min-width: 480px;
+	max-height: 90%;
+	height: 90%;
+	min-height: 200px;
+	font-family: var(--sdk-chat-window-font-style);
+	border: 1px solid var(--sdk-chat-window-border-color);
+	background: var(--sdk-chat-window-bg-color);
+	box-shadow: var(--sdk-chat-window-box-shadow);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 1030;
 }
 /* Chat header - UPDATED */
 .kore-chat-header {
@@ -53,7 +75,7 @@
 
 /* Remove default elements */
 
-.kore-chat-footer,
+/* Uncommented to enable chat footer */
 .time {
 	display: none !important;
 }
@@ -106,12 +128,13 @@
 	overflow: visible !important;
 }
 
-.liteTheme-one,
+/* Full screen theme styles - comment/uncomment to toggle */
+/* .liteTheme-one,
 .darkTheme-one,
 .liteTheme-two,
 .darkTheme-two {
 	/* Make the chat window full screen */
-	width: 100vw !important;
+/* width: 100vw !important;
 	height: 100vh !important;
 	top: 0 !important;
 	left: 0 !important;
@@ -119,7 +142,7 @@
 	padding: 0 !important;
 	border: none !important;
 	box-shadow: none !important;
-}
+} */
 .liteTheme-one {
 	/*--Theme one kore lite--*/
 
@@ -2444,11 +2467,11 @@
 	top: 3px !important;
 	left: 0;
 }
-
+/* 
 .kore-chat-window .disableFooter {
 	pointer-events: none;
 	opacity: 0.3;
-}
+} */
 
 .kore-chat-window .fa-caret-right:before {
 	content: '\f0da';

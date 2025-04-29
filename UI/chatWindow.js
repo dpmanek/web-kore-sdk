@@ -3267,6 +3267,7 @@
 							msgData: msgData,
 							helpers: helpers,
 							extension: extension,
+							buttonClass: 'vanguard-button-template',
 						});
 					} else if (
 						msgData.message[0] &&
@@ -3301,6 +3302,7 @@
 							msgData: msgData,
 							helpers: helpers,
 							extension: extension,
+							quickReplyClass: 'vanguard-quick-reply',
 						});
 						setTimeout(function () {
 							var evt = document.createEvent('HTMLEvents');
@@ -3499,6 +3501,19 @@
 							helpers: helpers,
 							extension: extension,
 						});
+
+						// Add Vanguard styling classes
+						if (messageHtml) {
+							messageHtml = $(messageHtml).addClass('vanguard-message');
+							if (msgData.type === 'bot_response') {
+								messageHtml.addClass('vanguard-bot-message');
+							}
+						}
+
+						// Render the message
+						_chatContainer.append(messageHtml);
+						me.handleImagePreview();
+
 						//storing the type of the graph to be displayed.
 						if (me.config.graphLib === 'google') {
 							setTimeout(function () {

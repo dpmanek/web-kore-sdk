@@ -70,14 +70,14 @@
 		console.log(chatConfig);
 
 		// Add fullscreen configuration
-		chatConfig.minimizeMode = false;
+		//chatConfig.minimizeMode = false;
 
-		$('#kr_chatContainer').hide();
+		// $('#kr_chatContainer').hide();
 
 		koreBot.show(chatConfig);
-		// $('.openChatWindow').click(function () {
-		// 	koreBot.show(chatConfig);
-		// });
+		$('.openChatWindow').click(function () {
+			koreBot.show(chatConfig);
+		});
 	});
 })(
 	jQuery ||
